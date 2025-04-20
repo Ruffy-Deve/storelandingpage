@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-white text-black font-sans">
+    <!-- Header -->
+  <header class="w-full px-4 sm:px-8 py-4 flex items-center justify-between">
+    <!-- Logo -->
+    <div class="text-lg font-medium flex items-center space-x-2">
+      <span class="font-bold"><img src="./lcons/logo.svg" alt=""></span>
+      <span class="text-sm tracking-wide">cultured kid.</span>
+    </div>
+
+    <!-- Desktop Nav -->
+    <nav class="hidden md:flex items-center space-x-6 text-sm uppercase">
+      <a href="#" class="hover:underline">Paintings</a>
+      <a href="#" class="hover:underline">Drawings</a>
+      <a href="#" class="hover:underline">Sculpture</a>
+      <a href="#" class="hover:underline">Artists</a>
+      <button>
+        <img src="./lcons/search.svg" alt="Search" class="w-5 h-5 hover:underline" />
+      </button>
+      <button>
+        <img src="./lcons/shop sign.svg" alt="Cart" class="w-5 h-5 hover:underline" />
+      </button>
+    </nav>
+
+    <!-- Mobile Menu Button -->
+    <div class="md:hidden">
+      <button id="menuBtn" aria-label="Menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.5"
+             viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round"
+                d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="md:hidden hidden px-4 py-2 space-y-4 text-sm uppercase">
+    <a href="#" class="block">Paintings</a>
+    <a href="#" class="block">Drawings</a>
+    <a href="#" class="block">Sculpture</a>
+    <a href="#" class="block">Artists</a>
+  </div>
+
+    <!-- Featured Paintings -->
+    <section class="px-8 py-16">
+      <a href="#" class="ml-35 text-4xl font-light mb-19 flex title-font mb-4">
+        <h2 class="font-medium">Featured Paintings</h2>
+        <img src="./lcons/Arroow.svg" alt="" class="w-10 h-10 ml-150" />
+      </a>
+
+      <!-- Painting card -->
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8"
+      >
+        <div>
+          <img src="./lcons/images/Painting(2).jpg" alt="" class="mb-4" />
+          <h3 class="font-medium">Young Kids</h3>
+          <p class="text-sm text-gray-500">
+            Francis Underwood <br /><em>Acrylic on wood, 2020</em>
+          </p>
+          <button
+            class="rounded rounded-full px-4 py-2 mt-2 bg-[rgb(156,149,142)] text-white hover:bg-[rgb(244,244,242)]"
+          >
+            Buy Now
+          </button>
+        </div>
+
+        <div>
+          <img src="./lcons/images/Painting.jpg" alt="" class="mb-4" />
+          <h3 class="font-medium">Wallowing Breeze</h3>
+          <p class="text-sm text-gray-500">
+            Hettie Richards <br /><em>Oil on canvas, 2008</em>
+          </p>
+          <button
+            class="rounded rounded-full px-4 py-2 mt-2 bg-[rgb(156,149,142)] text-white hover:bg-[rgb(244,244,242)]"
+          >
+            Buy Now
+          </button>
+        </div>
+
+        <div>
+          <img src="./lcons/images/Painting 2.jpg" alt="" class="mb-4" />
+          <h3 class="font-medium">J Resistance</h3>
+          <p class="text-sm text-gray-500">
+            Ria Arante <br /><em>Couache on paper, 2018</em>
+          </p>
+          <button
+            class="rounded rounded-full px-4 py-2 mt-2 bg-[rgb(156,149,142)] text-white hover:bg-[rgb(244,244,242)]"
+          >
+            Buy Now
+          </button>
+        </div>
+
+        <div>
+          <img src="./lcons/images/Painting(1).jpg" alt="" class="mb-4" />
+          <h3 class="font-medium">Warm Basket</h3>
+          <p class="text-sm text-gray-500">
+            Flora Powers <br /><em>Acrylic on wood, 2014</em>
+          </p>
+          <button
+            class="rounded rounded-full px-4 py-2 mt-2 bg-[rgb(156,149,142)] text-white hover:bg-[rgb(244,244,242)]"
+          >
+            Buy Now
+          </button>
+        </div>
+
+        <div>
+          <img src="./lcons/images/Painting 3(1).jpg" alt="" class="mb-4" />
+          <h3 class="font-medium">The Vonnegut</h3>
+          <p class="text-sm text-gray-500">
+            Ria Arante <br /><em>Oil on canvas, 2018</em>
+          </p>
+          <button
+            class="rounded rounded-full px-4 py-2 mt-2 bg-[rgb(156,149,142)] text-white hover:bg-[rgb(244,244,242)]"
+          >
+            Buy Now
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Artists -->
+    <section class="bg-[rgb(244,244,242)] px-8 py-16">
+      <h3 class="text-lg font-medium uppercase mb-6">Featured Artists</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="flex border w-full max-w-md bg-white gap-4 shadow-sm">
+          <img
+            src="./lcons/images/Artist.jpg"
+            alt=""
+            class=" w-28 h-auto object-cover"
+          />
+          <div class="px-4 flex flex-col justify-center">
+            <p class="font-medium text-lg">Mike Lambert</p>
+            <p class="text-sm italic text-gray-500">Painter, Texas</p>
+          </div>
+        </div>
+
+        <div class="bg-[rgb(244,244,242)] flex border w-full max-w-md bg-white gap-4 shadow-sm">
+          <img
+            src="./lcons/images/Artist.png"
+            alt=""
+            class=" w-28 h-auto object-cover"
+          />
+          <div class="px-4 flex flex-col justify-center">
+            <p class="font-medium text-lg">Eugenia Cohen</p>
+            <p class="text-sm italic text-gray-500">Painter, Amsterdam</p>
+          </div>
+        </div>
+
+
+        <div class="bg-[rgb(244,244,242)] flex border w-full max-w-sm bg-white gap-4 shadow-sm">
+          <img
+            src="./lcons/images/Artist(1).jpg"
+            alt=""
+            class=" w-28 h-auto object-cover"
+          />
+          <div class="px-4 flex flex-col justify-center">
+            <p class="font-medium text-lg">Jenny Hubbard</p>
+            <p class="text-sm italic text-gray-500">Painter,  California</p>
+          </div>
+        </div>
+
+        
+       
+
+      </div>
+    </section>
+  </body>
+  <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</html>
